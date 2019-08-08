@@ -1,0 +1,36 @@
+[
+  {"name": "Multics MR 12.6f (Honeywell 6800 DPS-8/M)",
+   "host": "36bitpi.fsf.net",
+   "handler": "telnet",
+   "port": 6180
+  },
+  {"name": "TOPS-20 7.1 (PDP-10 KL-10)",
+   "host": "tops-20.fsf.net",
+   "handler": "telnet",
+   "port": 23
+  },
+  {"name": "TOPS-10 7.03 (PDP-10 KA-10)",
+   "host": "36bitpi.fsf.net",
+   "handler": "telnet",
+   "port": 2020
+  },
+  {"name": "ITS (PDP-10 KA-10)",
+   "host": "36bitpi.fsf.net",
+   "handler": "telnet",
+   "port": 10569
+  },
+  {"name": "OpenVMS 7.3 (MicroVAX 3900)",
+   "host": "pivax.fsf.net",
+   "handler": "telnet",
+   "port": 23
+  },
+  {"name": "Unix v7 (PDP-11/70)",
+   "host": "16bitpi.fsf.net",
+   "handler": "telnet",
+   "port": 1107
+  },
+  {"name": "Unix 2.11bsd (PDP-11/70)",
+   "host": "16bitpi.fsf.net",
+   "handler": "telnet",
+   "port": 11211 }
+]

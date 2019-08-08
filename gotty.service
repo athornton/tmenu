@@ -1,0 +1,14 @@
+[Unit]
+Description=Terminal Server Menu for Ancient Systems (Web interface)
+After=network.target
+
+[Service]
+Type=Simple
+Restart=always
+ExecStart=-/usr/local/bin/gotty --port 6180 --width 80 --height 24 -w /usr/local/bin/tmenu -targetfile /usr/local/share/tmenu/targets.json -bannerfile /usr/local/share/tmenu/banner.txt
+WorkingDirectory=/tmp
+User=nobody
+
+[Install]
+WantedBy=multi-user.target
+
