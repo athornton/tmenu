@@ -50,6 +50,7 @@ just the extra config on top of that to turn on proxying):
 	ProxyVia On
 	ProxyPreserveHost On
     	ProxyRequests off
+	RewriteEngine on
 	RewriteCond %{HTTP:Upgrade} websocket [NC,OR]
 	RewriteCond %{HTTP:Connection} upgrade [NC,OR]
 
