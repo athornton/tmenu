@@ -19,18 +19,36 @@
    "handler": "telnet",
    "port": 10569
   },
+  {"name": "OpenVMS 8.4 (Alpha ES40)",
+   "host": "emualpha.fsf.net",
+   "handler": "telnet",
+   "port": 23
+  },
   {"name": "OpenVMS 7.3 (MicroVAX 3900)",
-   "host": "pivax.fsf.net",
+   "host": "emuvax.fsf.net",
+   "handler": "telnet",
+   "port": 23
+  },
+  {"name": "Unix 4.3bsd Quasijarus (MicroVAX 3900)",
+   "host": "quasijarus.fsf.net",
    "handler": "telnet",
    "port": 23
   },
   {"name": "Unix v7 (PDP-11/70)",
-   "host": "16bitpi.fsf.net",
+   "host": "pi370.fsf.net",
    "handler": "telnet",
    "port": 1107
   },
   {"name": "Unix 2.11bsd (PDP-11/70)",
-   "host": "16bitpi.fsf.net",
+   "host": "pi370.fsf.net",
    "handler": "telnet",
-   "port": 11211 }
+   "port": 4000 },
+  {"name": "RSX-11M+ (PDP-11/70)",
+   "host": "pi370.fsf.net",
+   "handler": "telnet",
+   "port": 10001 },
+  {"name": "VM/370r6 (System 370 4381)",
+   "host": "pi370.fsf.net",
+   "handler": "c3270",
+   "port": 3270 }
 ]

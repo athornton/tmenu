@@ -115,7 +115,9 @@ func ParseChoice(choice int, menu []MenuItem) []string {
   r := []string{cmd}
   switch cmd {
   case "socat":
-    r = append(r, "STDIO", fmt.Sprintf("TCP:%s:%s",host,port))
+    r = append(r, "STDIO", fmt.Sprintf("TCP:%s:%s", host, port))
+  case "c3270":
+    r = append(r, "-model", "3279-2", host, port)
   default:
     r = append(r, host, port)
   }

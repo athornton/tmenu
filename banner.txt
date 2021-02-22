@@ -4,6 +4,7 @@ WELCOME TO THE ANCIENT COMPUTER MVSEVM
 If you want an account on one of these systems, please email Adam
 Thornton <athornton@gmail.com> and ask.
 
-All systems are emulated, on Raspberry Pi and Linux.
+All systems are emulated, on Raspberry Pi and Linux, except the Alpha, which
+is emulated on x86_64.
 
 
