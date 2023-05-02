@@ -118,6 +118,8 @@ func ParseChoice(choice int, menu []MenuItem) []string {
     r = append(r, "STDIO", fmt.Sprintf("TCP:%s:%s", host, port))
   case "c3270":
     r = append(r, "-model", "3279-2", host, port)
+  case "tnz":
+    r = append(r, fmt.Sprintf("%s:%s", host, port))
   default:
     r = append(r, host, port)
   }

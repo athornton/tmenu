@@ -18,21 +18,31 @@ if that was a thing you wanted to do.
 
 ## Web Access Usage
 
-If you use `gotty` (https://github.com/yudai/gotty) you can make
-access to the menu available via the web.
+If you use `ttyd` (https://github.com/tsl0922/ttyd) or `gotty`
+(https://github.com/yudai/gotty) you can make access to the menu
+available via the web.  I recommend `ttyd` because it is actively maintained.
+
+### ttyd
+
+Use the `ttyd.service` file here as a systemd unit to hook up gotty
+on port 6180 to tmenu (assuming you've installed tmenu in
+/usr/local/bin and its support files in /usr/local/share/tmenu).
+
+### gotty
 
 You will probably need https://github.com/yudai/gotty/pull/259 to make
 gotty compile on a modern Go.
 
 Use the `gotty.service` file here as a systemd unit to hook up gotty
 on port 6180 to tmenu (assuming you've installed tmenu in
-/usr/local/bin and its support files in /usr/local/share/tmenu).  Now
-port 6180 serves the menu, so pointing a browser at
+/usr/local/bin and its support files in /usr/local/share/tmenu).
+
+### Exposing the terminal-to-HTTP interface via a web server
+
+Now port 6180 serves the menu, so pointing a browser at
 http://localhost:6180 should work.  If you're using something other
 than systemd, or just hate systemd (and who could blame you?), you
 basically just want to set tmenu up as an inetd service.
-
-### Exposing that via a web server
 
 If you want to let other people use this you probably want to put that
 on a route behind TLS and on port 443 of a real web server.  I use
